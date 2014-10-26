@@ -1,0 +1,27 @@
+<head>
+  <title>Aggies Invent</title>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid text-center">
+    <h1>A.I.R.S</h1>
+    {{> googleMap}}
+    {{> logEntry}}
+  </div>
+</body>
+
+<template name="googleMap">
+
+        <button id="moveMarker" class="btn btn-success">Move Marker</button>
+            <div id="map-canvas" style="width:100%; height:300px;"></div>
+</template>
+
+<template name="logEntry">
+    {{#each logHit}}
+        <ul>
+            <li>{{this.logs}}</li>
+        </ul>
+    {{/each}}
+</template>
