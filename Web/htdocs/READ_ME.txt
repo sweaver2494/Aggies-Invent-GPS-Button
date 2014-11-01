@@ -1,0 +1,1 @@
+Open this/ move the files into your MAMP/WAMP folder for localhosting otherwise these files will be on the server. 
